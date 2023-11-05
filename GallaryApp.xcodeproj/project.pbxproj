@@ -1,0 +1,952 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E64662A08050D697E041FF1 /* Pods_GallaryAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E863C209866B0B867296144 /* Pods_GallaryAppTests.framework */; };
+		1C6A567F2AF6B68000CFABF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A567E2AF6B68000CFABF7 /* AppDelegate.swift */; };
+		1C6A56812AF6B68000CFABF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56802AF6B68000CFABF7 /* SceneDelegate.swift */; };
+		1C6A56862AF6B68000CFABF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6A56842AF6B68000CFABF7 /* Main.storyboard */; };
+		1C6A56892AF6B68000CFABF7 /* GallaryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56872AF6B68000CFABF7 /* GallaryApp.xcdatamodeld */; };
+		1C6A568B2AF6B68200CFABF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6A568A2AF6B68200CFABF7 /* Assets.xcassets */; };
+		1C6A568E2AF6B68200CFABF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6A568C2AF6B68200CFABF7 /* LaunchScreen.storyboard */; };
+		1C6A56992AF6B68300CFABF7 /* GallaryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56982AF6B68300CFABF7 /* GallaryAppTests.swift */; };
+		1C6A56A32AF6B68300CFABF7 /* GallaryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56A22AF6B68300CFABF7 /* GallaryAppUITests.swift */; };
+		1C6A56A52AF6B68300CFABF7 /* GallaryAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56A42AF6B68300CFABF7 /* GallaryAppUITestsLaunchTests.swift */; };
+		1C6A56B82AF6BA2F00CFABF7 /* GallaryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56B72AF6BA2F00CFABF7 /* GallaryListViewController.swift */; };
+		1C6A56BA2AF6BA6B00CFABF7 /* GallaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56B92AF6BA6B00CFABF7 /* GallaryViewModel.swift */; };
+		1C6A56BC2AF6BAB500CFABF7 /* GallaryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56BB2AF6BAB500CFABF7 /* GallaryRepository.swift */; };
+		1C6A56BF2AF6BBA400CFABF7 /* GallaryImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56BE2AF6BBA400CFABF7 /* GallaryImageCollectionViewCell.swift */; };
+		1C6A56C22AF6BFED00CFABF7 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56C12AF6BFED00CFABF7 /* Configuration.swift */; };
+		1C6A56C42AF6C20300CFABF7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56C32AF6C20300CFABF7 /* NetworkManager.swift */; };
+		1C6A56C72AF6C45400CFABF7 /* GallaryPhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56C52AF6C45300CFABF7 /* GallaryPhotosResponse.swift */; };
+		1C6A56C82AF6C45400CFABF7 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56C62AF6C45300CFABF7 /* Photos.swift */; };
+		1C6A56CA2AF6C79200CFABF7 /* ThrowableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56C92AF6C79200CFABF7 /* ThrowableError.swift */; };
+		1C6A56CD2AF6C94D00CFABF7 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56CC2AF6C94D00CFABF7 /* Data+Extension.swift */; };
+		1C6A56D02AF6C9DA00CFABF7 /* ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56CF2AF6C9DA00CFABF7 /* ModelMapper.swift */; };
+		1C6A56D42AF6CA8700CFABF7 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56D32AF6CA8700CFABF7 /* PhotoModel.swift */; };
+		1C6A56D72AF6CF2D00CFABF7 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56D62AF6CF2D00CFABF7 /* ImageCache.swift */; };
+		1C6A56D92AF6D05100CFABF7 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6A56D82AF6D05100CFABF7 /* UIImageView+Extension.swift */; };
+		1C9AFA122AF81274005AD562 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9AFA112AF81274005AD562 /* LoginViewController.swift */; };
+		1C9AFA142AF8145A005AD562 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9AFA132AF8145A005AD562 /* LoginViewModel.swift */; };
+		1C9AFA162AF81C17005AD562 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9AFA152AF81C17005AD562 /* Storyboard.swift */; };
+		1C9AFA182AF82427005AD562 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C9AFA172AF82427005AD562 /* ProfileViewModel.swift */; };
+		841BD8CE2AF77FB3006A8628 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BD8CD2AF77FB3006A8628 /* ProfileViewController.swift */; };
+		841BD8D02AF7804C006A8628 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841BD8CF2AF7804C006A8628 /* HomeTabBarViewController.swift */; };
+		C24A51B30EFE255ACB0DA3BB /* Pods_GallaryApp_GallaryAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C9DEFF9CB58A50EBD8BD8E /* Pods_GallaryApp_GallaryAppUITests.framework */; };
+		F7349516C4577172D1E9EE96 /* Pods_GallaryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B54B21BB87044AD51631F9 /* Pods_GallaryApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C6A56952AF6B68200CFABF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C6A56732AF6B68000CFABF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C6A567A2AF6B68000CFABF7;
+			remoteInfo = GallaryApp;
+		};
+		1C6A569F2AF6B68300CFABF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C6A56732AF6B68000CFABF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C6A567A2AF6B68000CFABF7;
+			remoteInfo = GallaryApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00B54B21BB87044AD51631F9 /* Pods_GallaryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GallaryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6A567B2AF6B68000CFABF7 /* GallaryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GallaryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6A567E2AF6B68000CFABF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C6A56802AF6B68000CFABF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1C6A56852AF6B68000CFABF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C6A56882AF6B68000CFABF7 /* GallaryApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GallaryApp.xcdatamodel; sourceTree = "<group>"; };
+		1C6A568A2AF6B68200CFABF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C6A568D2AF6B68200CFABF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C6A568F2AF6B68200CFABF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C6A56942AF6B68200CFABF7 /* GallaryAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GallaryAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6A56982AF6B68300CFABF7 /* GallaryAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryAppTests.swift; sourceTree = "<group>"; };
+		1C6A569E2AF6B68300CFABF7 /* GallaryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GallaryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6A56A22AF6B68300CFABF7 /* GallaryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryAppUITests.swift; sourceTree = "<group>"; };
+		1C6A56A42AF6B68300CFABF7 /* GallaryAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1C6A56B72AF6BA2F00CFABF7 /* GallaryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryListViewController.swift; sourceTree = "<group>"; };
+		1C6A56B92AF6BA6B00CFABF7 /* GallaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryViewModel.swift; sourceTree = "<group>"; };
+		1C6A56BB2AF6BAB500CFABF7 /* GallaryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryRepository.swift; sourceTree = "<group>"; };
+		1C6A56BE2AF6BBA400CFABF7 /* GallaryImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GallaryImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		1C6A56C12AF6BFED00CFABF7 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		1C6A56C32AF6C20300CFABF7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1C6A56C52AF6C45300CFABF7 /* GallaryPhotosResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GallaryPhotosResponse.swift; sourceTree = "<group>"; };
+		1C6A56C62AF6C45300CFABF7 /* Photos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		1C6A56C92AF6C79200CFABF7 /* ThrowableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowableError.swift; sourceTree = "<group>"; };
+		1C6A56CC2AF6C94D00CFABF7 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		1C6A56CF2AF6C9DA00CFABF7 /* ModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMapper.swift; sourceTree = "<group>"; };
+		1C6A56D32AF6CA8700CFABF7 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		1C6A56D62AF6CF2D00CFABF7 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		1C6A56D82AF6D05100CFABF7 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		1C9AFA112AF81274005AD562 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1C9AFA132AF8145A005AD562 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		1C9AFA152AF81C17005AD562 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		1C9AFA172AF82427005AD562 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		1E863C209866B0B867296144 /* Pods_GallaryAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GallaryAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F3CDF2DF6737242934CF60 /* Pods-GallaryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallaryApp.release.xcconfig"; path = "Target Support Files/Pods-GallaryApp/Pods-GallaryApp.release.xcconfig"; sourceTree = "<group>"; };
+		25C9DEFF9CB58A50EBD8BD8E /* Pods_GallaryApp_GallaryAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GallaryApp_GallaryAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		574AA523084983AC33591B73 /* Pods-GallaryAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallaryAppTests.release.xcconfig"; path = "Target Support Files/Pods-GallaryAppTests/Pods-GallaryAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		841BD8CD2AF77FB3006A8628 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		841BD8CF2AF7804C006A8628 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		9C11877B10602C30D7B7328C /* Pods-GallaryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallaryAppTests.debug.xcconfig"; path = "Target Support Files/Pods-GallaryAppTests/Pods-GallaryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9E6CFD0E25F8AB6BF027612 /* Pods-GallaryApp-GallaryAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallaryApp-GallaryAppUITests.release.xcconfig"; path = "Target Support Files/Pods-GallaryApp-GallaryAppUITests/Pods-GallaryApp-GallaryAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AEDFD897BA0EE35CCF3B0687 /* Pods-GallaryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallaryApp.debug.xcconfig"; path = "Target Support Files/Pods-GallaryApp/Pods-GallaryApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F59F16C27D8B2B614E885060 /* Pods-GallaryApp-GallaryAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GallaryApp-GallaryAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-GallaryApp-GallaryAppUITests/Pods-GallaryApp-GallaryAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C6A56782AF6B68000CFABF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7349516C4577172D1E9EE96 /* Pods_GallaryApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C6A56912AF6B68200CFABF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E64662A08050D697E041FF1 /* Pods_GallaryAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C6A569B2AF6B68300CFABF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24A51B30EFE255ACB0DA3BB /* Pods_GallaryApp_GallaryAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B285A48DAA2F8548BC887C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B54B21BB87044AD51631F9 /* Pods_GallaryApp.framework */,
+				25C9DEFF9CB58A50EBD8BD8E /* Pods_GallaryApp_GallaryAppUITests.framework */,
+				1E863C209866B0B867296144 /* Pods_GallaryAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		17CC682FE2B60036AE510933 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AEDFD897BA0EE35CCF3B0687 /* Pods-GallaryApp.debug.xcconfig */,
+				20F3CDF2DF6737242934CF60 /* Pods-GallaryApp.release.xcconfig */,
+				F59F16C27D8B2B614E885060 /* Pods-GallaryApp-GallaryAppUITests.debug.xcconfig */,
+				A9E6CFD0E25F8AB6BF027612 /* Pods-GallaryApp-GallaryAppUITests.release.xcconfig */,
+				9C11877B10602C30D7B7328C /* Pods-GallaryAppTests.debug.xcconfig */,
+				574AA523084983AC33591B73 /* Pods-GallaryAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1C6A56722AF6B68000CFABF7 = {
+			isa = PBXGroup;
+			children = (
+				1C6A567D2AF6B68000CFABF7 /* GallaryApp */,
+				1C6A56972AF6B68300CFABF7 /* GallaryAppTests */,
+				1C6A56A12AF6B68300CFABF7 /* GallaryAppUITests */,
+				1C6A567C2AF6B68000CFABF7 /* Products */,
+				17CC682FE2B60036AE510933 /* Pods */,
+				0B285A48DAA2F8548BC887C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1C6A567C2AF6B68000CFABF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A567B2AF6B68000CFABF7 /* GallaryApp.app */,
+				1C6A56942AF6B68200CFABF7 /* GallaryAppTests.xctest */,
+				1C6A569E2AF6B68300CFABF7 /* GallaryAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C6A567D2AF6B68000CFABF7 /* GallaryApp */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56D52AF6CF1C00CFABF7 /* ImageCache */,
+				1C6A56CE2AF6C9B900CFABF7 /* Mapper */,
+				1C6A56CB2AF6C93500CFABF7 /* Extensions */,
+				1C6A56C02AF6BFC900CFABF7 /* AppDelegate */,
+				1C6A56BD2AF6BB7500CFABF7 /* Cell */,
+				1C6A56B52AF6B95300CFABF7 /* NetworkLayer */,
+				1C6A56B42AF6B94500CFABF7 /* Repository */,
+				1C6A56B32AF6B93900CFABF7 /* Model */,
+				1C6A56B22AF6B92900CFABF7 /* ViewModel */,
+				1C6A56B12AF6B91C00CFABF7 /* ViewController */,
+				1C6A56B62AF6B96200CFABF7 /* Storyboard */,
+				1C6A568A2AF6B68200CFABF7 /* Assets.xcassets */,
+				1C6A568F2AF6B68200CFABF7 /* Info.plist */,
+				1C6A56872AF6B68000CFABF7 /* GallaryApp.xcdatamodeld */,
+				1C9AFA152AF81C17005AD562 /* Storyboard.swift */,
+			);
+			path = GallaryApp;
+			sourceTree = "<group>";
+		};
+		1C6A56972AF6B68300CFABF7 /* GallaryAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56982AF6B68300CFABF7 /* GallaryAppTests.swift */,
+			);
+			path = GallaryAppTests;
+			sourceTree = "<group>";
+		};
+		1C6A56A12AF6B68300CFABF7 /* GallaryAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56A22AF6B68300CFABF7 /* GallaryAppUITests.swift */,
+				1C6A56A42AF6B68300CFABF7 /* GallaryAppUITestsLaunchTests.swift */,
+			);
+			path = GallaryAppUITests;
+			sourceTree = "<group>";
+		};
+		1C6A56B12AF6B91C00CFABF7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				841BD8CF2AF7804C006A8628 /* HomeTabBarViewController.swift */,
+				1C6A56B72AF6BA2F00CFABF7 /* GallaryListViewController.swift */,
+				841BD8CD2AF77FB3006A8628 /* ProfileViewController.swift */,
+				1C9AFA112AF81274005AD562 /* LoginViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1C6A56B22AF6B92900CFABF7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56B92AF6BA6B00CFABF7 /* GallaryViewModel.swift */,
+				1C9AFA132AF8145A005AD562 /* LoginViewModel.swift */,
+				1C9AFA172AF82427005AD562 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1C6A56B32AF6B93900CFABF7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56D22AF6CA6200CFABF7 /* DomainModel */,
+				1C6A56D12AF6CA4B00CFABF7 /* ResponseModel */,
+				1C6A56C92AF6C79200CFABF7 /* ThrowableError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1C6A56B42AF6B94500CFABF7 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56BB2AF6BAB500CFABF7 /* GallaryRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1C6A56B52AF6B95300CFABF7 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56C12AF6BFED00CFABF7 /* Configuration.swift */,
+				1C6A56C32AF6C20300CFABF7 /* NetworkManager.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		1C6A56B62AF6B96200CFABF7 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56842AF6B68000CFABF7 /* Main.storyboard */,
+				1C6A568C2AF6B68200CFABF7 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1C6A56BD2AF6BB7500CFABF7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56BE2AF6BBA400CFABF7 /* GallaryImageCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1C6A56C02AF6BFC900CFABF7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A567E2AF6B68000CFABF7 /* AppDelegate.swift */,
+				1C6A56802AF6B68000CFABF7 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		1C6A56CB2AF6C93500CFABF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56CC2AF6C94D00CFABF7 /* Data+Extension.swift */,
+				1C6A56D82AF6D05100CFABF7 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1C6A56CE2AF6C9B900CFABF7 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56CF2AF6C9DA00CFABF7 /* ModelMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		1C6A56D12AF6CA4B00CFABF7 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56C52AF6C45300CFABF7 /* GallaryPhotosResponse.swift */,
+				1C6A56C62AF6C45300CFABF7 /* Photos.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		1C6A56D22AF6CA6200CFABF7 /* DomainModel */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56D32AF6CA8700CFABF7 /* PhotoModel.swift */,
+			);
+			path = DomainModel;
+			sourceTree = "<group>";
+		};
+		1C6A56D52AF6CF1C00CFABF7 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				1C6A56D62AF6CF2D00CFABF7 /* ImageCache.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C6A567A2AF6B68000CFABF7 /* GallaryApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C6A56A82AF6B68300CFABF7 /* Build configuration list for PBXNativeTarget "GallaryApp" */;
+			buildPhases = (
+				786696F34732D01073B8A629 /* [CP] Check Pods Manifest.lock */,
+				1C6A56772AF6B68000CFABF7 /* Sources */,
+				1C6A56782AF6B68000CFABF7 /* Frameworks */,
+				1C6A56792AF6B68000CFABF7 /* Resources */,
+				AA4286E2A0BC5DCB15F1FB04 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GallaryApp;
+			productName = GallaryApp;
+			productReference = 1C6A567B2AF6B68000CFABF7 /* GallaryApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C6A56932AF6B68200CFABF7 /* GallaryAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C6A56AB2AF6B68300CFABF7 /* Build configuration list for PBXNativeTarget "GallaryAppTests" */;
+			buildPhases = (
+				7F7B5124BF9A09BF8C5150B4 /* [CP] Check Pods Manifest.lock */,
+				1C6A56902AF6B68200CFABF7 /* Sources */,
+				1C6A56912AF6B68200CFABF7 /* Frameworks */,
+				1C6A56922AF6B68200CFABF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C6A56962AF6B68200CFABF7 /* PBXTargetDependency */,
+			);
+			name = GallaryAppTests;
+			productName = GallaryAppTests;
+			productReference = 1C6A56942AF6B68200CFABF7 /* GallaryAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C6A569D2AF6B68300CFABF7 /* GallaryAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C6A56AE2AF6B68300CFABF7 /* Build configuration list for PBXNativeTarget "GallaryAppUITests" */;
+			buildPhases = (
+				19DCC627508E06F5FADF23BE /* [CP] Check Pods Manifest.lock */,
+				1C6A569A2AF6B68300CFABF7 /* Sources */,
+				1C6A569B2AF6B68300CFABF7 /* Frameworks */,
+				1C6A569C2AF6B68300CFABF7 /* Resources */,
+				CBDFFD14B91D42EC5EBAED1D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C6A56A02AF6B68300CFABF7 /* PBXTargetDependency */,
+			);
+			name = GallaryAppUITests;
+			productName = GallaryAppUITests;
+			productReference = 1C6A569E2AF6B68300CFABF7 /* GallaryAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C6A56732AF6B68000CFABF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1C6A567A2AF6B68000CFABF7 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					1C6A56932AF6B68200CFABF7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 1C6A567A2AF6B68000CFABF7;
+					};
+					1C6A569D2AF6B68300CFABF7 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 1C6A567A2AF6B68000CFABF7;
+					};
+				};
+			};
+			buildConfigurationList = 1C6A56762AF6B68000CFABF7 /* Build configuration list for PBXProject "GallaryApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C6A56722AF6B68000CFABF7;
+			productRefGroup = 1C6A567C2AF6B68000CFABF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C6A567A2AF6B68000CFABF7 /* GallaryApp */,
+				1C6A56932AF6B68200CFABF7 /* GallaryAppTests */,
+				1C6A569D2AF6B68300CFABF7 /* GallaryAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C6A56792AF6B68000CFABF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6A568E2AF6B68200CFABF7 /* LaunchScreen.storyboard in Resources */,
+				1C6A568B2AF6B68200CFABF7 /* Assets.xcassets in Resources */,
+				1C6A56862AF6B68000CFABF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C6A56922AF6B68200CFABF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C6A569C2AF6B68300CFABF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19DCC627508E06F5FADF23BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GallaryApp-GallaryAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		786696F34732D01073B8A629 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GallaryApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F7B5124BF9A09BF8C5150B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GallaryAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA4286E2A0BC5DCB15F1FB04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GallaryApp/Pods-GallaryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GallaryApp/Pods-GallaryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GallaryApp/Pods-GallaryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBDFFD14B91D42EC5EBAED1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GallaryApp-GallaryAppUITests/Pods-GallaryApp-GallaryAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GallaryApp-GallaryAppUITests/Pods-GallaryApp-GallaryAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GallaryApp-GallaryAppUITests/Pods-GallaryApp-GallaryAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C6A56772AF6B68000CFABF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6A56D02AF6C9DA00CFABF7 /* ModelMapper.swift in Sources */,
+				1C6A56CD2AF6C94D00CFABF7 /* Data+Extension.swift in Sources */,
+				1C6A56D72AF6CF2D00CFABF7 /* ImageCache.swift in Sources */,
+				1C6A56C42AF6C20300CFABF7 /* NetworkManager.swift in Sources */,
+				1C6A56D42AF6CA8700CFABF7 /* PhotoModel.swift in Sources */,
+				1C6A56CA2AF6C79200CFABF7 /* ThrowableError.swift in Sources */,
+				1C6A56892AF6B68000CFABF7 /* GallaryApp.xcdatamodeld in Sources */,
+				841BD8D02AF7804C006A8628 /* HomeTabBarViewController.swift in Sources */,
+				1C9AFA122AF81274005AD562 /* LoginViewController.swift in Sources */,
+				1C6A56BA2AF6BA6B00CFABF7 /* GallaryViewModel.swift in Sources */,
+				841BD8CE2AF77FB3006A8628 /* ProfileViewController.swift in Sources */,
+				1C6A56B82AF6BA2F00CFABF7 /* GallaryListViewController.swift in Sources */,
+				1C9AFA162AF81C17005AD562 /* Storyboard.swift in Sources */,
+				1C6A567F2AF6B68000CFABF7 /* AppDelegate.swift in Sources */,
+				1C6A56C82AF6C45400CFABF7 /* Photos.swift in Sources */,
+				1C9AFA182AF82427005AD562 /* ProfileViewModel.swift in Sources */,
+				1C6A56C72AF6C45400CFABF7 /* GallaryPhotosResponse.swift in Sources */,
+				1C6A56BF2AF6BBA400CFABF7 /* GallaryImageCollectionViewCell.swift in Sources */,
+				1C6A56BC2AF6BAB500CFABF7 /* GallaryRepository.swift in Sources */,
+				1C6A56C22AF6BFED00CFABF7 /* Configuration.swift in Sources */,
+				1C6A56D92AF6D05100CFABF7 /* UIImageView+Extension.swift in Sources */,
+				1C6A56812AF6B68000CFABF7 /* SceneDelegate.swift in Sources */,
+				1C9AFA142AF8145A005AD562 /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C6A56902AF6B68200CFABF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6A56992AF6B68300CFABF7 /* GallaryAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C6A569A2AF6B68300CFABF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6A56A32AF6B68300CFABF7 /* GallaryAppUITests.swift in Sources */,
+				1C6A56A52AF6B68300CFABF7 /* GallaryAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C6A56962AF6B68200CFABF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C6A567A2AF6B68000CFABF7 /* GallaryApp */;
+			targetProxy = 1C6A56952AF6B68200CFABF7 /* PBXContainerItemProxy */;
+		};
+		1C6A56A02AF6B68300CFABF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C6A567A2AF6B68000CFABF7 /* GallaryApp */;
+			targetProxy = 1C6A569F2AF6B68300CFABF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C6A56842AF6B68000CFABF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C6A56852AF6B68000CFABF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C6A568C2AF6B68200CFABF7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C6A568D2AF6B68200CFABF7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C6A56A62AF6B68300CFABF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1C6A56A72AF6B68300CFABF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C6A56A92AF6B68300CFABF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEDFD897BA0EE35CCF3B0687 /* Pods-GallaryApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GallaryApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gallary.GallaryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C6A56AA2AF6B68300CFABF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20F3CDF2DF6737242934CF60 /* Pods-GallaryApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GallaryApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gallary.GallaryApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1C6A56AC2AF6B68300CFABF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C11877B10602C30D7B7328C /* Pods-GallaryAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gallary.GallaryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GallaryApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GallaryApp";
+			};
+			name = Debug;
+		};
+		1C6A56AD2AF6B68300CFABF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 574AA523084983AC33591B73 /* Pods-GallaryAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gallary.GallaryAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GallaryApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GallaryApp";
+			};
+			name = Release;
+		};
+		1C6A56AF2AF6B68300CFABF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59F16C27D8B2B614E885060 /* Pods-GallaryApp-GallaryAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gallary.GallaryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GallaryApp;
+			};
+			name = Debug;
+		};
+		1C6A56B02AF6B68300CFABF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E6CFD0E25F8AB6BF027612 /* Pods-GallaryApp-GallaryAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gallary.GallaryAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GallaryApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C6A56762AF6B68000CFABF7 /* Build configuration list for PBXProject "GallaryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C6A56A62AF6B68300CFABF7 /* Debug */,
+				1C6A56A72AF6B68300CFABF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C6A56A82AF6B68300CFABF7 /* Build configuration list for PBXNativeTarget "GallaryApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C6A56A92AF6B68300CFABF7 /* Debug */,
+				1C6A56AA2AF6B68300CFABF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C6A56AB2AF6B68300CFABF7 /* Build configuration list for PBXNativeTarget "GallaryAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C6A56AC2AF6B68300CFABF7 /* Debug */,
+				1C6A56AD2AF6B68300CFABF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C6A56AE2AF6B68300CFABF7 /* Build configuration list for PBXNativeTarget "GallaryAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C6A56AF2AF6B68300CFABF7 /* Debug */,
+				1C6A56B02AF6B68300CFABF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1C6A56872AF6B68000CFABF7 /* GallaryApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1C6A56882AF6B68000CFABF7 /* GallaryApp.xcdatamodel */,
+			);
+			currentVersion = 1C6A56882AF6B68000CFABF7 /* GallaryApp.xcdatamodel */;
+			path = GallaryApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1C6A56732AF6B68000CFABF7 /* Project object */;
+}

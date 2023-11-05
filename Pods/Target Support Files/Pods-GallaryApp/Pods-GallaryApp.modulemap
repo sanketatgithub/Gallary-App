@@ -1,0 +1,6 @@
+framework module Pods_GallaryApp {
+  umbrella header "Pods-GallaryApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
